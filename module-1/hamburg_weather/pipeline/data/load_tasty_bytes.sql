@@ -297,12 +297,12 @@ USE WAREHOUSE demo_build_wh;
  COPY INTO {{env}}_tasty_bytes.raw_pos.country
 (
   country_id,
- --   country,
- --   iso_currency,
-  --  iso_country,
-  --  city_id,
- --   city,
-  --  city_population
+    country,
+    iso_currency,
+    iso_country,
+    city_id,
+    city,
+    city_population
  )
  FROM @{{env}}_tasty_bytes.public.s3load/raw_pos/country/;
 
